@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Virtual Environment
+venv/
+.env/
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Model files (opcional)
+# descomente se NÃO quiser subir modelos grandes
+# *.pkl
+
+# Dataset files (opcional)
+*.csv
+
+# Logs
+*.log
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
