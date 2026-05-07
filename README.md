@@ -98,7 +98,7 @@ Modelo final: **Ensemble Learning (XGBoost + Random Forest + Logistic Regression
 
 ---
 
-## 🔎 Principais Features Identificadas
+##  Principais Features Identificadas
 - StockOptionLevel  
 - MonthlyIncome  
 - JobSatisfaction  
