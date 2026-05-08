@@ -85,16 +85,35 @@ Métricas utilizadas:
 
 ---
 
-## 🏆 Melhor Resultado
-Modelo final: **Ensemble Learning (XGBoost + Random Forest + Logistic Regression)**
+## 🏆 Melhores Resultados
+
+### 🔹 Ensemble Learning (Logistic Regression + Random Forest + XGBoost)
+- Focado em **equilíbrio geral e menos alarmes falsos**.
 
 | Métrica   | Resultado |
 | --------- | --------- |
-| Accuracy  | 86%       |
-| Precision | 61%       |
+| Accuracy  | **86%**   |
+| Precision | **61%**   |
 | Recall    | 38%       |
-| F1-Score  | 47%       |
-| ROC-AUC   | 0.80      |
+| F1-Score  | **47%**   |
+| ROC-AUC   | **0.80**  |
+
+---
+### 🔹 XGBoost com Threshold Tuning (~0.20)
+- Focado em **detectar o máximo possível de saídas** (Recall alto).
+- Métricas:
+
+| Métrica   | Resultado |
+| --------- | --------- |
+| Accuracy  | **78,9%**   |
+| Precision | **38%**   |
+| Recall    | 51%       |
+| F1-Score  | **44%**   |
+| ROC-AUC   | **0.74**  |
+
+### 📌 Interpretação
+- **XGBoost calibrado** → melhor em Recall, ideal quando a prioridade é não perder funcionários em risco.  
+- **Ensemble** → melhor em F1 e AUC, ideal quando a prioridade é equilíbrio e confiabilidade.  
 
 ---
 
